@@ -5,11 +5,11 @@ beta <- 2*log(n)
 penVector <-c(beta,beta/5,beta/100)
 par(mfrow=c(length(penVector),1))
 for (pen in penVector)
-  {
+{
   myGraphDecay <- graph(
     Edge(0, 0, "up", penalty = pen),
     Edge(0, 0, "null", 0, decay = 0.966)
-  )a
+  )
   g <- gfpop(data =  mydata, mygraph = myGraphDecay, type = "mean")
   #g
   gamma <- 0.966
@@ -27,5 +27,3 @@ for (pen in penVector)
   legend('topright', legend=c("DATA", "GFPOP"),
          col=c("black", "blue"), lty=1:1, cex=0.8)
 }
-
-
