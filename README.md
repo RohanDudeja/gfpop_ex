@@ -21,7 +21,7 @@ shiny::runGitHub("guiTask", "RohanDudeja", subdir = "shinyApp")
 
 # Hard Task:
 Q-D3.js data visualization in which you can hover over one displayed item\
-A-
+A-\
 1.Download the js file containing D3  code\
 2.Get the input data for r2d3 package\
 3.Output is plotted in continuous form and hovering over data point displays it x and y coordinates 
