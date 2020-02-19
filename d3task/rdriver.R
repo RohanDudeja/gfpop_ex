@@ -1,0 +1,5 @@
+library("r2d3")
+x<-seq(1, 100)
+y<-pnorm(x, mean = 60, sd = 20)
+d<-data.frame(x,y)
+r2d3(data = d,script = "R/Code/GFpop/d3task.js")
