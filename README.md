@@ -27,6 +27,7 @@ A-\
 3.Output is plotted in continuous form and hovering over data point displays it x and y coordinates 
 ```r
 library("devtools")
+install.packages("r2d3")
 download.file("https://raw.githubusercontent.com/RohanDudeja/guiTask/master/d3task/d3task.js",destfile = "d3task.js")
 source_url("https://raw.githubusercontent.com/RohanDudeja/guiTask/master/d3task/rdata.R")
 r2d3(data = d,script ='d3task.js')
