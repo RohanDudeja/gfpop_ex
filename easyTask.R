@@ -25,5 +25,5 @@ for (pen in penVector)
   par(new = TRUE)
   plot(signal, type ='l', col = 4, ylim = ylimits, lwd = 3,ylab="")
   legend('topright', legend=c("DATA", "GFPOP"),
-         col=c("black", "blue"), lty=1:1, cex=0.8)
+         col=c("black", "blue"), lty=1:1, cex=0.4,ncol=2)
 }
