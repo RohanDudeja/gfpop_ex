@@ -2,8 +2,12 @@
 Task for Constrained changepoint GUI project
 
 # Easy Task
+To run the task 
+```r
+library(devtools)
+source_url("https://raw.githubusercontent.com/RohanDudeja/guiTask/master/easyTask.R")
+```
 ![plot](https://user-images.githubusercontent.com/43816495/74726458-7ff29400-5265-11ea-9927-c878945c465e.png)
-
 #  Medium Task
 To run the examples locally, you can install the **shiny** package in R, and
 use the function `runGitHub()` 
