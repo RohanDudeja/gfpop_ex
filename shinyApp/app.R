@@ -9,20 +9,20 @@
 
 library(shiny)
 library(gfpop)
-# Define UI for application that draws a histogram
+# Define UI for application that draw
 ui <- fluidPage(
 
     # Application title
     titlePanel("ShinyApp for gfpop"),
 
-    # Sidebar with a slider input for number of bins 
+    # Sidebar with a slider input
     sidebarLayout(
         sidebarPanel(
             
             # Input: Selector for choosing dataset ----
             
             
-            # Input: Numeric entry for number of obs to view ----
+            # Input: Numeric entry 
             numericInput(inputId = "penalty",
                          label = "Penalty parameter",
                          value = 1)
@@ -34,11 +34,11 @@ ui <- fluidPage(
     )
 )
 
-# Define server logic required to draw a histogram
+# Define server logic required to draw
 server <- function(input, output) {
     
     output$distPlot <- renderPlot({
-        # generate bins based on input$bins from ui.R
+        # generate 
         n <- 400
         mydata <- dataGenerator(n, c(0.2, 0.5, 0.8, 1), c(5, 10, 15, 20), sigma = 1, gamma = 0.966)
         beta <- 2*log(n)
